@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #3e2723;
+  --secondary-color: #dd6a41;
+  --accent-color: #ffdab9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  /* margin: 0% 10%; */
+  /* padding: 5%; */
+  font-family: "Work_Sans";
+}
+.flex-container {
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly; */
+}
+section {
+  height: 101vh!important;
+  margin: 0%;
+  /* width: 100%; */
+  /* border: red solid 1px; */
+  /* margin: 0% 10%; */
+}
+
+.animation {
+  transition: all .2s ease-in-out; 
+
+}
+.animation:hover {
+  transform: scale(1.2); 
+
+}
+.skill-shape {
+  /* border: 3px solid #7E5835; */
+  box-shadow: #7e5835 10px 10px;
+  border-radius: 25px;
+}
+.project-shape {
+  /* border: 3px solid #7E5835; */
+  box-shadow: #ffdab9 10px 10px;
+  border-radius: 25px;
+}
+.column {
+  min-width: 30%;
+  padding: 1rem;
+  display: inline-block;
+}
+
+.column-right {
+  float: right;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.aboutme-content {
+  scroll-snap-align: start;
+  overflow-y: scroll;
+  max-height: 50vh;
+  min-width: 45vw;
+  margin: 2% 2%;
+}
+
+
+.column h1 {
+  width: 100%;
+}
+
+.items {
+  margin: 0 auto;
+}
+
+.aboutme-content {
+  /* margin: 10% 10%; */
+  max-width: 20vw;
+}
+
+.skills {
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 4em;
+  margin-top: 4rem;
+
+}
+
+.test {
+  border: red solid 1px;
+}
+.primary {
+  color: var(--primary-color);
+}
+.secondary {
+  color: var(--secondary-color);
+}
+.accent {
+  color: var(--accent-color);
+}
+.primary-background {
+  background-color: var(--primary-color);
+  z-index: 0;
+}
+.secondary-background {
+  background-color: var(--secondary-color);
+}
+.accent-background {
+  background-color: var(--accent-color);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
