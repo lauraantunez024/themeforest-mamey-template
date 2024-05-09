@@ -30,7 +30,7 @@ body {
   justify-content: space-evenly; */
 }
 section {
-  height: 101vh!important;
+  height: 105vh!important;
   margin: 0%;
   /* width: 100%; */
   /* border: red solid 1px; */
@@ -49,6 +49,8 @@ section {
   /* border: 3px solid #7E5835; */
   box-shadow: #7e5835 10px 10px;
   border-radius: 25px;
+  max-width: 25vw;
+  max-height: 25vh;
 }
 .project-shape {
   /* border: 3px solid #7E5835; */
@@ -65,6 +67,7 @@ section {
   float: right;
 }
 
+
 .row:after {
   content: "";
   display: table;
@@ -73,7 +76,7 @@ section {
 .aboutme-content {
   scroll-snap-align: start;
   overflow-y: scroll;
-  max-height: 50vh;
+  max-height: 55vh;
   min-width: 45vw;
   margin: 2% 2%;
 }
@@ -117,6 +120,7 @@ section {
 .primary-background {
   background-color: var(--primary-color);
   z-index: 0;
+  
 }
 .secondary-background {
   background-color: var(--secondary-color);

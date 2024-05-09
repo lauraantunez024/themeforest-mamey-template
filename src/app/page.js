@@ -5,8 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
  
 const imageLoader = () => {
-  return `https://picsum.photos/400
-  `
+  return `http://placekitten.com/200/200`
 }
 // const qaPoints = [{name: "Knowledge of Black White and Gray box testing"}, {name: 'Over 2 years experience in manual testing'}, {name: 'Only QA for my team'}]
 // const skillPoints = [{name: "Excellent Communicator"}, {name: 'Life-long learner'}, {name: 'Proven skills working independtly'}]
@@ -16,10 +15,10 @@ import { skills, portfolio, aboutMe } from "./data.js";
 
 export default function Home() {
   return (
-    <main class="relative">
+    <main class="relative" id='home'>
       <section class="primary-background">
         <div class="absolute top-96 left-24">
-          <h1 class="text-7xl mt-20">Laura Antunez</h1>
+          <h1 class="text-7xl mt-12">Laura Antunez</h1>
           <br />
           <h2 class="text-4xl accent">Quality Assurance Engineer</h2>
 
@@ -27,8 +26,8 @@ export default function Home() {
         </div>
       </section>
       {/* second page - Skills section */}
-      <section class="accent-background">
-        <h1 class="text-center title secondary">Skills</h1>
+      <section class="accent-background" id='skills'>
+        <h1 class="text-center title">Skills</h1>
         <div class="flex flex-col">
           {skills.map((skillData, index) => (
             <SkillBlock
@@ -40,7 +39,7 @@ export default function Home() {
         </div>
       </section>
       {/* third page - projects section */}
-      <section>
+      <section id='projects'>
         <h1 class="text-6xl text-center title mb-10">Projects</h1>
         <div class="flex flex-wrap flex-row justify-center items-center">
           {portfolio.map((project, index) => (
@@ -56,8 +55,8 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section class="accent-background">
-        <h1 class="text-center title">About</h1>
+      <section class="accent-background" id='about'>
+        <h1 class="text-center title mb-24">About</h1>
       <div class="row">
         <div class="column author-image ml-6">
 
@@ -66,31 +65,32 @@ export default function Home() {
             class='rounded-full'
             width={500}
             height={500}
-            src='https://picsum.photos/200'
+            src='http://placekitten.com/200/300'
             alt='dummy image'
             />
 
         </div>
-        <div class="column column-right aboutme-content">
-          <h1 class="right text-xl">
+        <div class="column flex column-right aboutme-content">
+          <h1 class="right text-3xl">
             {" "}
             {aboutMe.bigText}
             
           </h1>
           <br/>
-          <p class="">
+          <p class="text-xl">
             {" "}
             {aboutMe.smallText}
            {" "}
           </p>
+          <Link href='About'> <button class='skill-shape animation justify-self-end ml-60 secondary-background accent px-3 py-2 mt-4 '>Read my story </button></Link>
+
         </div>
-        <Link href='About'> Read my story</Link>
         {/* <p>read my story</p> */}
       </div>
      
           
       </section>
-      <section>
+      <section id='contact'>
         <h1 class="text-center title">Contact</h1>
       </section>
     </main>

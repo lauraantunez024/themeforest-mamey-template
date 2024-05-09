@@ -10,22 +10,35 @@
 // import Jacob from './images/js.png';
 
 export const aboutMe = {
-    bigText: 'Laura is a highly motivated QA that is always looking for a challenge and an opportuinity to sharpen her skills.',
+    bigText: 'Hello, pleased to meet you. My name is Laura and thank you for taking the time to check out my page!',
 
 
-    smallText: `Laura began her tech journey shortly after graduating from Florida International University with a Bachelor of Arts in Journalism. Originally she planned on using Python for data science to strengthen her reporting skills, but along the way fell in love with the solutions oriented nature of computer programming.`,
+    smallText: `I am a QA that is always looking to sharpen and expand my skills. I began my tech journey shortly after graduating from Florida International University with a Bachelor of Arts in Journalism. Originally I planned on using Python for data science to strengthen my reporting skills, but along the way fell in love with the solutions oriented nature of computer programming.`,
     
-   expandedText: `After completing the data science course that included sql, web scraping, A/B testing and data visualizations, she used this knowledge to get a data journalism internship with the Hechinger Report. The Hechinger Report is a non profit news room that focuses on education both k-12 and higher level. During this time I used my knowledge of data cleaning to make large data sets usable with Python pandas. I also took on my first coding project alongside an article I wrote myself on the state of sex education in the United States. The interactive map included data I had cleaned myself, and used technologies such as JQuery, HTML/CSS and Javascript.It was also accompanied by a D3.js data visualization.
-    
+   expandedText: [ 
+    `After completing the data science course that included sql, web scraping, A/B testing and data visualizations, I used this knowledge to get a data journalism internship with the Hechinger Report. The Hechinger Report is a non profit news room that focuses on education both k-12 and higher level. During this time I used my knowledge of data cleaning to make large data sets usable with Python pandas. I also took on my first coding project alongside an article I wrote myself on the state of sex education in the United States. The interactive map included data I had cleaned myself, and used technologies such as JQuery, HTML/CSS and Javascript.It was also accompanied by a D3.js data visualization.`,
+    `
     After a 3 month stint at a newspaper, I enrolled in a 6-month full-stack developmnent bootcamp offered by Georgia Tech. Through this I learned things like Node, React, Apollo Client, GraphQL, Mern Stack, MVC Stack, Progress Web Applications and using and creating APIs.
     
+    `,
+    `
     About a month after starting the bootcamp, in March 2022 I began working for SpringBig, a SaaS company focused on loyalty and messaging, as a QA intern. Three months after that I was hired full time as a Jr. QA, and then three months after that my supervisor promoted me to QA Engineer. 
     
+    `,
+    `
     Since then, I've mostly been the Lead QA - and a lot of times the only QA - for my team for over a year. My team has handled major features including building a one of a kind subscription program from the ground up. We've also worked on payment, billing and invoice features, enhancements for our gift card features, and working with all our integration partnerships. I have also personally worked on a team with heads of engineering to test all integrations after a complete ruby refactor to move it to the next version.
+    `,
+    `
     
     Outside of work, my passion for software and engineering as a whole is evident. I spend a lot of time working on coding projects, reading about new technologies and how to implement them, and working on arduino projects involving both hardware and software components.
+    `,
+    `
     
-    Overall, I am always passionate about everything I do. I love to think about problems and how to systematically find their solutions. My goal is to excel at whatever avenue I am given. Wether that is being an automation qa engineer, a senior manual qa tester, or a software developer,  I am ready to take on the challenge. `
+    Overall, I am always passionate about everything I do. I love to think about problems and how to systematically find their solutions. My goal is to excel at whatever avenue I am given. Wether that is being an automation qa engineer, a senior manual qa tester, or a software developer,  I am ready to take on the challenge. 
+    `
+   ]
+    
+
 
 
     
@@ -92,7 +105,7 @@ export const portfolio = [
       altAttribute: "team builder app",
     },
     {
-      title: "Peroject 7",
+      title: "Project 7",
       subtitle: "Command line application that outputs HTML of team profile cards ",
       description: "Node.js, Object Oriented Programming",
       
@@ -126,6 +139,7 @@ export const portfolio = [
 
   export const skills = [
     {type: 'Languages',
+    background: 'accent-background',
     skillSet: [
         'HTML/CSS',
         'Javascript', 
@@ -135,6 +149,7 @@ export const portfolio = [
         'Swift'     
     ]},
     {type: 'Frontend',
+    background: 'primary-background',
     skillSet: [
         'React', 
         'Vue', 
@@ -144,6 +159,7 @@ export const portfolio = [
  
     ]},
     {type: 'Backend',
+    background: 'accent-background',
     skillSet: [
         'Node', 
         'Express',
@@ -153,6 +169,7 @@ export const portfolio = [
     
     ]},
     {type: 'Testing',
+    background: 'primary-background',
     skillSet: [
         'RSPEC',
         'Jest', 
@@ -163,6 +180,7 @@ export const portfolio = [
 
     ]},
     {type: 'Databases',
+    background: 'accent-background',
     skillSet: [
         'Postgresql',
         'SQL',
@@ -172,6 +190,7 @@ export const portfolio = [
 
     ]},
     {type: 'Other',
+    background: 'primary-background',
     skillSet: [
         'Fluent in English and Spanish', 
         'Click Up',

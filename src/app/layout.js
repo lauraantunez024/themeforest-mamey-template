@@ -1,6 +1,11 @@
 import { Work_Sans } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
+import HamburgerMenu from "./components/HamburgerMenu";
+
+// const function showMenu() {
+
+// }
 import Link from 'next/link';
 
 const workSans = Work_Sans({ subsets: ["latin"] });
@@ -17,14 +22,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       
       <body className={workSans.className}>
-      <header className='z-10 inline flex flex-row justify-end'>
-          <Image
-            className="inline mr-5 mt-5"
-            src="/logo.png"
-            width={100}
-            height={100}
-            alt="Tech Sapote Logo Image"
-          />
+      <header className='h-32'>
+      <HamburgerMenu/>
       </header>
         {children}</body>
     </html>
