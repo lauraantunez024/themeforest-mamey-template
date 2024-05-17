@@ -6,8 +6,6 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, UserCircleIcon } from '@her
 import {
   HomeIcon,
   CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
   WrenchScrewdriverIcon,
   IdentificationIcon,
   FolderOpenIcon,
@@ -66,7 +64,7 @@ export default function HamburgerMenu() {
                 </div>
               ))}
             </div>
-            <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+            {/* <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
               {callsToAction.map((item) => (
                 <a
                   key={item.name}
@@ -77,7 +75,7 @@ export default function HamburgerMenu() {
                   {item.name}
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
         </Popover>
       </Transition>

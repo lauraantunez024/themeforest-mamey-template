@@ -1,7 +1,7 @@
 export default function SkillBlock({ type, skillSet }) {
   return (
     
-      <div className="flex flex-wrap flex-col">
+      <div class=''>
         <h1 class='text-3xl flex flex-col text-left font-medium pl-12'> {type} </h1>
         <div class='flex flex-row justify-center skill-card'>
           {skillSet.map((skill, index) => (

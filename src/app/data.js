@@ -53,7 +53,7 @@ export const portfolio = [
       description: "Node.js, Postgresql, Sequelize, CronJob",
       
       deployedURL: "https://lauraantunez024.github.io/E-Comm/",
-      repoURL: "https://github.com/lauraantunez024/E-Comm",
+      repoURL: "https://github.com/lauraantunez024/discord-moviechat-bot",
       altAttribute: "E commerce API",
     },
     {
@@ -63,7 +63,7 @@ export const portfolio = [
       
       deployedURL:
         "https://lauraantunez024.github.io/Weather-Dashboard/",
-      repoURL: "https://github.com/lauraantunez024/Weather-Dashboard",
+      repoURL: "https://github.com/lauraantunez024/Grace-website",
       altAttribute: "weather dashboard app",
     },
     {
@@ -97,7 +97,7 @@ export const portfolio = [
     },
     {
       title: "Team Builder Application",
-      subtitle: "Command line application that outputs HTML of team profile cards ",
+      subtitle: "Command line application that outputs HTML of team profile cards created for Georgia Tech Bootcamp ",
       description: "Node.js, Object Oriented Programming",
       
       deployedURL:
@@ -106,29 +106,29 @@ export const portfolio = [
       altAttribute: "team builder app",
     },
     {
-      title: "Project 7",
-      subtitle: "Command line application that outputs HTML of team profile cards ",
-      description: "Node.js, Object Oriented Programming",
+      title: "Crispy Weather",
+      subtitle: "Revisiting the weather app I created for my bootcamp using a newer technology.",
+      description: "Node.js, Object Oriented Programming, Nuxt.js",
       
       deployedURL:
         "https://lauraantunez024.github.io/Team-Builder/",
-      repoURL: "https://github.com/lauraantunez024/Team-Builder",
+      repoURL: "https://github.com/lauraantunez024/crispy-weather",
       altAttribute: "team builder app",
     },
     {
-      title: "Project 8",
-      subtitle: "Command line application that outputs HTML of team profile cards ",
-      description: "Node.js, Object Oriented Programming",
+      title: "Blog created with Ruby on Rails",
+      subtitle: "Used Rails tutorial to create a simple CRUD app.",
+      description: "Ruby on Rails, Object Oriented Programming",
       
       deployedURL:
         "https://lauraantunez024.github.io/Team-Builder/",
-      repoURL: "https://github.com/lauraantunez024/Team-Builder",
+      repoURL: "https://github.com/lauraantunez024/rails-blog",
       altAttribute: "team builder app",
     },
     {
-      title: "Project 9 ",
-      subtitle: "Command line application that outputs HTML of team profile cards ",
-      description: "Node.js, Object Oriented Programming",
+      title: "Activity Recommendation iOS App",
+      subtitle: "Followed swift tutorial to create my first swift app",
+      description: "Swift, XCode",
       
       deployedURL:
         "https://lauraantunez024.github.io/Team-Builder/",

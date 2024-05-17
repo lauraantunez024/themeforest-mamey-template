@@ -17,18 +17,21 @@ export default function Home() {
   return (
     <main class="w-full" id=''>
       <section class="primary-background h-screen">
-        <div class="landing-content">
+        <div class="landing-content absolute">
           <h1 class="text-7xl mt-12">Laura Antunez</h1>
           <br />
-          <h2 class="text-4xl accent">Quality Assurance Engineer</h2>
-
-          <h2 class="text-4xl accent">with Full Stack Knowledge</h2>
+          <span class="text-4xl accent spinning absolute">Full Stack Developer</span>
+          <span class="text-4xl accent spinning absolute">React Developer</span>
+          <span class="text-4xl accent spinning absolute">Vue Developer</span>
+          <span class="text-4xl accent spinning absolute">Node Developer</span>
+          <span class="text-4xl accent spinning absolute">Ruby on Rails Developer</span>
+          <span class="text-4xl accent spinning absolute ">Quality Assurance Engineer</span>
         </div>
       </section>
       {/* second page - Skills section */}
       <section class="accent-background scrollable" id='skills'>
         <h1 class="text-center title">Skills</h1>
-        <div class="flex flex-col flex-wrap skill-section">
+        <div class="flex flex-col ">
           {skills.map((skillData, index) => (
             <SkillBlock
               key={index}
@@ -82,7 +85,7 @@ export default function Home() {
             {aboutMe.smallText}
            {" "}
           </p>
-          <Link href='About' class='text-center about-button'> <button class='skill-shape animation justify-self-end secondary-background accent px-3 py-2 mt-4 text-center'>Read my story </button></Link>
+          {/* <Link href='About' class='text-center about-button'> <button class='skill-shape animation justify-self-end secondary-background accent px-3 py-2 mt-4 text-center'>Read my story </button></Link> */}
 
         </div>
         {/* <p>read my story</p> */}
@@ -90,9 +93,15 @@ export default function Home() {
      
           
       </section>
-      <section class='' id='contact'>
-        <h1 class="text-center title">Contact</h1>
-      </section>
+      <footer class='' id='contact'>
+        <h1 class="text-center text-4xl py-4">Want to work together?</h1>
+        <div class='flex flex-row flex-wrap justify-evenly bottom-links text-2xl'>
+          <a href='https://www.linkedin.com/in/laura-antunez/' target='_blank'> Linkedin</a>
+          {/* <a href=''> Medium</a> */}
+          <a href='https://github.com/lauraantunez024' target='_blank'> Github</a>
+          {/* <a href=''> Resume</a> */}
+        </div>
+      </footer>
     </main>
   );
 }

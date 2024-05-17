@@ -85,7 +85,7 @@ main {
 }
 
 .landing-content {
-  padding: 3rem;
+  padding: 2rem;
 }
 /* Home page - skills section */
 .skill-shape {
@@ -134,8 +134,8 @@ main {
 
 /* Home page -  project section*/
 .project-shape {
-  box-shadow: #ffdab9 10px 10px;
-  border-radius: 25px;
+  box-shadow: #7e5835 10px 10px;
+  border-radius: 1rem;
   max-width: 25vw;
   max-height: 25vh;
 }
@@ -175,6 +175,8 @@ main {
 .title {
   font-size: 4em;
   margin-top: 4rem;
+  font-size: clamp(4rem, 1rem + 5vw, 6rem);
+
 }
 
 img {
@@ -200,6 +202,11 @@ img {
     margin: 1% 1%;
     min-width: 50vw;
     max-width: 90%;
+    overflow-y: scroll;
+  }
+
+  .project-content {
+    font-size: clamp(1rem, 2vw + 2vw, 2rem)
   }
 
   .project-section {
@@ -211,15 +218,92 @@ img {
 
   .skill-card {
     flex-direction: column;
-    max-width: 40vw;
+    max-width: 90vw;
   }
 
 }
 
-
+.bottom-links {
+  padding: 1%;
+}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+.spinning {
+  opacity: 0;
+  left: 10%;
+  margin-bottom: 0;
+  /* right: 0; */
+
+}
+
+.spinning:nth-of-type(1) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+}
+
+.spinning:nth-of-type(2) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 1.75s;
+}
+
+
+.spinning:nth-of-type(3) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 3.25s;
+}
+
+.spinning:nth-of-type(4) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 4.75s;
+}
+
+.spinning:nth-of-type(5) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 6.25s;
+}
+
+
+.spinning:nth-of-type(6) {
+  animation-name: rotate-last;
+  animation-duration: 1.5s;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+} 
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+  
+  20%, 80% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -25px, 0);
+  }
+}
+
+@keyframes rotate-last {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+  
+   100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }

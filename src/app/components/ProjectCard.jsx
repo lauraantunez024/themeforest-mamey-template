@@ -6,13 +6,13 @@ export default function ProjectCard({
   subtitle,
 }) {
   return (
-    <div class="flex flex-wrap my-4 project-shape p-5 justify-stretch text-center accent-background mx-6 animation project-card h-full">
+    <div class="row my-4 project-shape p-1 justify-stretch text-center accent-background mx-6 animation project-card h-full">
 
-    <a href={deploymentURL} target='_blank' class="">
-      <div class='basis-1/4 text-center justify-center'>
+    <a href={deploymentURL} target='_blank' class="column">
+      <div class='basis-1/4 text-center justify-center project-content'>
         <h1 class="text-xl secondary text-center font-medium"> {title}</h1>
         <h2 class='primary'>{subtitle}</h2>
-        <p class='primary'> {description}</p>
+        <p class='primary font-medium'> {description}</p>
         </div>
     </a>
     </div>
