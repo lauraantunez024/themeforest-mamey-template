@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       
       <body className={workSans.className}>
-      <header className='h-32'>
+      <header className='w-screen'>
       <HamburgerMenu/>
       </header>
         {children}</body>

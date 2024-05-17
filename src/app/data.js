@@ -16,6 +16,7 @@ export const aboutMe = {
     smallText: `I am a QA that is always looking to sharpen and expand my skills. I began my tech journey shortly after graduating from Florida International University with a Bachelor of Arts in Journalism. Originally I planned on using Python for data science to strengthen my reporting skills, but along the way fell in love with the solutions oriented nature of computer programming.`,
     
    expandedText: [ 
+    // `Being an extreme minority in tech - woman, lgbtq+, type 1 diabetes since 6 - disabled - and born not in this country.`
     `After completing the data science course that included sql, web scraping, A/B testing and data visualizations, I used this knowledge to get a data journalism internship with the Hechinger Report. The Hechinger Report is a non profit news room that focuses on education both k-12 and higher level. During this time I used my knowledge of data cleaning to make large data sets usable with Python pandas. I also took on my first coding project alongside an article I wrote myself on the state of sex education in the United States. The interactive map included data I had cleaned myself, and used technologies such as JQuery, HTML/CSS and Javascript.It was also accompanied by a D3.js data visualization.`,
     `
     After a 3 month stint at a newspaper, I enrolled in a 6-month full-stack developmnent bootcamp offered by Georgia Tech. Through this I learned things like Node, React, Apollo Client, GraphQL, Mern Stack, MVC Stack, Progress Web Applications and using and creating APIs.

@@ -1,113 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+/* Main color palette */
 :root {
   --primary-color: #3e2723;
   --secondary-color: #dd6a41;
   --accent-color: #ffdab9;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: var(--secondary-color);
-  background: var(--primary-color);
-  /* margin: 0% 10%; */
-  /* padding: 5%; */
-  font-family: "Work_Sans";
-}
-.flex-container {
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly; */
-}
-section {
-  height: 105vh!important;
-  margin: 0%;
-  /* width: 100%; */
-  /* border: red solid 1px; */
-  /* margin: 0% 10%; */
-}
-
-.animation {
-  transition: all .2s ease-in-out; 
-
-}
-.animation:hover {
-  transform: scale(1.2); 
-
-}
-.skill-shape {
-  /* border: 3px solid #7E5835; */
-  box-shadow: #7e5835 10px 10px;
-  border-radius: 25px;
-  max-width: 25vw;
-  max-height: 25vh;
-}
-.project-shape {
-  /* border: 3px solid #7E5835; */
-  box-shadow: #ffdab9 10px 10px;
-  border-radius: 25px;
-}
-.column {
-  min-width: 30%;
-  padding: 1rem;
-  display: inline-block;
-}
-
-.column-right {
-  float: right;
-}
-
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.aboutme-content {
-  scroll-snap-align: start;
-  overflow-y: scroll;
-  max-height: 55vh;
-  min-width: 45vw;
-  margin: 2% 2%;
-}
-
-
-.column h1 {
-  width: 100%;
-}
-
-.items {
-  margin: 0 auto;
-}
-
-.aboutme-content {
-  /* margin: 10% 10%; */
-  max-width: 20vw;
-}
-
-.skills {
-  justify-content: space-between;
-}
-
-.title {
-  font-size: 4em;
-  margin-top: 4rem;
-
-}
-
-.test {
-  border: red solid 1px;
-}
 .primary {
   color: var(--primary-color);
 }
@@ -120,7 +17,6 @@ section {
 .primary-background {
   background-color: var(--primary-color);
   z-index: 0;
-  
 }
 .secondary-background {
   background-color: var(--secondary-color);
@@ -128,6 +24,199 @@ section {
 .accent-background {
   background-color: var(--accent-color);
 }
+
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Global CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  font-family: "Work_Sans";
+  width: 100vw!important;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+
+}
+
+.logo {
+  left: 90%;
+}
+
+@media
+
+header {
+  max-width: 100%;
+}
+
+section {
+  overflow: hidden;
+  min-height: 100%;
+  margin: 0%;
+  padding: 2rem 1rem;
+  min-width: 100%;
+}
+
+.scrollable {
+}
+
+.animation {
+  transition: all 0.2s ease-in-out;
+}
+.animation:hover {
+  transform: scale(1.2);
+}
+
+/* Home page - landing section */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-content {
+  padding: 3rem;
+}
+/* Home page - skills section */
+.skill-shape {
+  box-shadow: #7e5835 1rem 1rem;
+  border-radius: 1rem;
+
+}
+.skills {
+  justify-content: space-between;
+}
+/* Home page -  about section*/
+.aboutme-shape {
+  box-shadow: #7e5835 15px 15px;
+  border-radius: 25px;
+  padding: 1rem;
+}
+.column {
+  min-width: 30%;
+  padding: 1rem;
+  display: inline-block;
+}
+
+.column-right {
+  float: right;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.author-image {
+  display: inline;
+}
+.aboutme-content {
+  scroll-snap-align: start;
+  max-width: 90vw;
+  margin: 2% 2%;
+  display: inline;
+  flex-direction: column;
+}
+
+.column h1 {
+  max-width: 100%;
+}
+
+/* Home page -  project section*/
+.project-shape {
+  box-shadow: #ffdab9 10px 10px;
+  border-radius: 25px;
+  max-width: 25vw;
+  max-height: 25vh;
+}
+
+/* Home page -  contact section*/
+/* Home page - Projects */
+/* About page - full about me section */
+/* About page - Testimonials section */
+/* About page - Resume section*/
+/* Projects page */
+
+/* Components - Hamburger Menu */
+/* Components - Project Cards */
+
+.project-card {
+  margin-left: 2rem;
+  /* overflow-y: auto; */
+}
+/* Components - Skills blocks */
+
+.items {
+  margin: 0 auto;
+}
+
+
+
+.aboutme-content {
+  max-width: 60vw;
+  margin-top: 15vh;
+}
+
+.about-button {
+  margin-left: 40%;
+}
+
+
+.title {
+  font-size: 4em;
+  margin-top: 4rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 40rem) {
+
+  .logo {
+    left: 55%;
+  }
+
+  .aboutme-content {
+    max-width: 90vw;
+    margin-top: 1vh;
+    margin-left: auto;
+  }
+  .about-section {
+    flex-direction: column;
+  }
+  .project-card {
+    margin: 1% 1%;
+    min-width: 50vw;
+    max-width: 90%;
+  }
+
+  .project-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+
+  .skill-card {
+    flex-direction: column;
+    max-width: 40vw;
+  }
+
+}
+
+
 
 @layer utilities {
   .text-balance {

@@ -27,9 +27,9 @@ const callsToAction = [
 
 export default function HamburgerMenu() {
   return (
-    <Popover className="relative pl-44 left-3/4">
+    <Popover className="relative logo">
       <Image
-          className="inline mt-5"
+          className="inline relative mt-5"
           src="/logo.png"
           width={100}
           height={100}
@@ -49,12 +49,12 @@ export default function HamburgerMenu() {
         leaveTo="opacity-0 translate-y-1"
       >
         <Popover className="absolute mr-92 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
-          <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl accent-background text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+          <div className="max-w-md flex-auto overflow-hidden rounded-3xl accent-background text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
             <div className="p-4">
               {solutions.map((item) => (
-                <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
-                  <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:accent-background">
-                    <item.icon className="h-6 w-6 primary group-hover:text-indigo-600" aria-hidden="true" />
+                <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-natural-brown hover:text-accent">
+                  <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg  group-hover:text-accent">
+                    <item.icon className="h-6 max-w-6 primary hover:text-accent group-hover:text-secondary" aria-hidden="true" />
                   </div>
                   <div>
                     <a href={item.href} className="font-medium text-gray-900">
@@ -71,7 +71,7 @@ export default function HamburgerMenu() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="flex items-center justify-center gap-x-2.5 p-3 font-medium text-gray-900 hover:bg-gray-100"
+                  className="flex hover:bg-natural-brown hover:text-accent items-center justify-center gap-x-2.5 p-3 font-medium text-gray-900 hover:bg-gray-100"
                 >
                   <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
                   {item.name}

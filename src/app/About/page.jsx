@@ -10,18 +10,20 @@ export default function About() {
 
 	
   return (
-    <main>
+    <main class=''>
       <section class='px-4 mx-4'>
         <h1 class="title text-center"> My Story</h1> 
+<div class='aboutme-shape secondary-background mx-12 mt-69 pt-6'>
 
     {aboutMe.expandedText.map((about, index)=>(
-        <div class='accent-background'> 
-                <p key={index} class="px-4 mx-6 primary text-lg"> {about}
+        <div class=''> 
+                <p key={index} class="px-4 mx-6 accent text-lg"> {about}
              </p>
              <br/>
              
         </div>
         ))}
+</div>
       </section>
       <section>
       <h1 class="title text-center"> Testimonial</h1> 
