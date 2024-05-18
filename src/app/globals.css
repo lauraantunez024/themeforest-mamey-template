@@ -210,6 +210,10 @@ img {
     margin: 0;
   }
 
+  .spinning {
+    padding: 1rem;
+  }
+
   .logo {
     left: 55%;
   }
@@ -239,6 +243,9 @@ img {
     flex-direction: column;
   }
   
+  .author-image {
+    padding: 1rem 1rem;
+  }
 
 
   .skill-card {
@@ -263,7 +270,7 @@ section.accent-background {
 }
 .spinning {
   opacity: 0;
-  left: 10%;
+  left: 4rem;
   margin-bottom: 0;
   /* right: 0; */
 

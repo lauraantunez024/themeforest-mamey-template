@@ -18,8 +18,8 @@ export default function Home() {
     <main class="" id=''>
       <section class="primary-background h-screen">
         <div class="landing-content absolute">
-          <h1 class="text-7xl mt-12">Laura Antunez</h1>
-          <h1 class="text-4xl accent ">Quality Assurance Engineer</h1>
+          <h1 class="text-6xl mt-24">Laura Antunez</h1>
+          <h1 class="text-3xl accent pt-4">Quality Assurance Engineer</h1>
           <br />
           <h1 class='secondary'> with knowledge of:</h1>
           <span class="text-4xl accent spinning absolute">React </span>
