@@ -48,7 +48,7 @@ export default function HamburgerMenu() {
         leaveFrom="opacity-100 translate-y-0"
         leaveTo="opacity-0 translate-y-1"
       >
-        <Popover className="absolute popover z-10 mt-5 w-screen md:max-2xl:-translate-x-1/4 px-4 ">
+        <Popover className="absolute popover z-10 mt-5 w-screen -translate-x-1/4 px-4 ">
           <div className="max-w-md overflow-hidden rounded-3xl accent-background text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
             <div className="p-4 ">
               {solutions.map((item) => (
