@@ -15,17 +15,18 @@ import { skills, portfolio, aboutMe } from "./data.js";
 
 export default function Home() {
   return (
-    <main class="w-full" id=''>
+    <main class="w-screen" id=''>
       <section class="primary-background h-screen">
         <div class="landing-content absolute">
           <h1 class="text-7xl mt-12">Laura Antunez</h1>
+          <h1 class="text-4xl accent ">Quality Assurance Engineer</h1>
           <br />
-          <span class="text-4xl accent spinning absolute">Full Stack Developer</span>
-          <span class="text-4xl accent spinning absolute">React Developer</span>
-          <span class="text-4xl accent spinning absolute">Vue Developer</span>
-          <span class="text-4xl accent spinning absolute">Node Developer</span>
-          <span class="text-4xl accent spinning absolute">Ruby on Rails Developer</span>
-          <span class="text-4xl accent spinning absolute ">Quality Assurance Engineer</span>
+          <h1 class='secondary'> with knowledge of:</h1>
+          <span class="text-4xl accent spinning absolute">React </span>
+          <span class="text-4xl accent spinning absolute">Vue </span>
+          <span class="text-4xl accent spinning absolute">Node </span>
+          <span class="text-4xl accent spinning absolute">Ruby on Rails</span>
+          <span class="text-4xl accent spinning absolute">Full Stack Development</span>
         </div>
       </section>
       {/* second page - Skills section */}
@@ -44,7 +45,7 @@ export default function Home() {
       {/* third page - projects section */}
       <section class='w-full' id='projects'>
         <h1 class="text-6xl text-center title mb-10">Projects</h1>
-        <div class="flex flex-wrap flex-row justify-items-center items-center ml-14 project-section">
+        <div class="flex flex-wrap flex-row justify-center items-center project-section">
           {portfolio.map((project, index) => (
             <ProjectCard
               key={index}

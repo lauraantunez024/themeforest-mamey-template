@@ -49,7 +49,7 @@ export const aboutMe = {
 export const portfolio = [
     {
       title: "Discord Movie Bot WIP",
-      subtitle: "Used for scheduling movie night with your friends on discord channel.",
+      subtitle: "A discord bot with slash commands used for scheduling movie night with your friends on discord channel.",
       description: "Node.js, Postgresql, Sequelize, CronJob",
       
       deployedURL: "https://lauraantunez024.github.io/E-Comm/",
