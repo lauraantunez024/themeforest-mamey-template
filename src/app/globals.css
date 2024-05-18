@@ -100,7 +100,7 @@ main {
 }
 
 .landing-content {
-  /* padding: 2rem; */
+  padding: 4rem;
 }
 /* Home page - skills section */
 .skill-shape {
@@ -231,7 +231,7 @@ img {
   }
 
   .project-content {
-    font-size: clamp(1rem, 2vw + 2vw, 2rem)
+    font-size: clamp(1rem, 1vw + 5vw, 3rem)
   }
 
   .project-section {
