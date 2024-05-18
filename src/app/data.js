@@ -117,7 +117,7 @@ export const portfolio = [
     },
     {
       title: "Blog created with Ruby on Rails",
-      subtitle: "Used Rails tutorial to create a simple CRUD app.",
+      subtitle: "Used Rails tutorial to create a simple blog. Blog accepts Create Read Update Delete functionality.",
       description: "Ruby on Rails, Object Oriented Programming",
       
       deployedURL:
@@ -216,8 +216,8 @@ export const portfolio = [
       email: 'LauraAntunez024@gmail.com',
       phoneNumber: '(305)290-1430',
       Github: 'github.com/lauraantunez024',
-      LinkedIN: 'https://www.linkedin.com/in/laura-antunez-2a4a12182/',
-      Resume: './Resume2022.pdf'
+      LinkedIN: 'https://www.linkedin.com/in/laura-antunez/',
+      Resume: '/resume24.pdf'
     
     }
   ]

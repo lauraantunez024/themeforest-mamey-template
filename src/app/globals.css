@@ -48,6 +48,8 @@ body {
   overflow-x: hidden;
 }
 
+
+
 body {
   color: var(--secondary-color);
   background: var(--primary-color);
@@ -57,7 +59,16 @@ body {
 }
 
 h1 {
-  font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+  font-size: clamp(1rem, 1rem + 1vh, 3rem)
+}
+
+a.column h1 {
+  font-size: clamp(1rem, 1vw + 5vw, 2rem);
+  padding: 1rem;
+}
+a.column h2 {
+  /* font-size: clamp(1vw, 1vw + 1vw, vw); */
+  /* padding: 1rem; */
 }
 
 .logo {
@@ -72,6 +83,8 @@ section {
   overflow: hidden;
   max-height: 100%;
   margin: 0%;
+  padding-bottom: 2vh;
+
   /* padding: 2rem 1rem; */
   max-width: 100%;
 }
@@ -127,6 +140,7 @@ main {
 }
 .author-image {
   display: inline;
+  padding-left: 1rem;
 }
 .aboutme-content {
   scroll-snap-align: start;
@@ -188,6 +202,16 @@ img {
   display: block;
 }
 
+.project-content {
+  /* font-size: clamp(12px, 10px + 5px, 1rem); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+}
+
 @media screen and (max-width: 40rem) {
   body {
     overflow-y: none;
@@ -210,7 +234,6 @@ img {
   .aboutme-content {
     max-width: 90vw;
     margin-top: 1vh;
-    margin-left: auto;
   }
   .about-section {
     flex-direction: column;
@@ -222,6 +245,11 @@ img {
     min-height: 25vh;
     overflow-y: scroll;
   }
+
+  .popover {
+    left : 0;
+    position: absolute;
+    }
 
   .project-content {
     font-size: clamp(1rem, 1vw + 5vw, 3rem);
@@ -253,6 +281,7 @@ section.accent-background {
 }
 .bottom-links {
   /* padding: 1%; */
+
 }
 
 @layer utilities {
@@ -262,9 +291,10 @@ section.accent-background {
 }
 .spinning {
   opacity: 0;
-  left: 4rem;
   margin-bottom: 0;
-  /* right: 0; */
+}
+.spinning:after {
+  opacity: 1;
 }
 
 .spinning:nth-of-type(1) {
@@ -294,7 +324,7 @@ section.accent-background {
 .spinning:nth-of-type(5) {
   animation-name: rotate-last;
   animation-duration: 1.5s;
-  animation-delay: 7s;
+  animation-delay: 6s;
   animation-fill-mode: forwards;
 }
 

@@ -11,22 +11,25 @@ const imageLoader = () => {
 // const skillPoints = [{name: "Excellent Communicator"}, {name: 'Life-long learner'}, {name: 'Proven skills working independtly'}]
 // const softwarePoints = [{name: "Strong foundations in Javascript and Ruby on Rails"}, {name: 'In-Depth knowledge of software development life cycle'}, {name: 'Experience in Swift and full stack development'}]
 
-import { skills, portfolio, aboutMe } from "./data.js";
+import { skills, portfolio, aboutMe, contacts } from "./data.js";
 
 export default function Home() {
   return (
     <main class="" id=''>
       <section class="primary-background h-screen">
-        <div class="landing-content absolute">
+        <div class="landing-content">
           <h1 class="text-6xl mt-24">Laura Antunez</h1>
           <h1 class="text-3xl accent pt-4">Quality Assurance Engineer</h1>
           <br />
           <h1 class='secondary'> with knowledge of:</h1>
-          <span class="text-4xl accent spinning absolute">React </span>
-          <span class="text-4xl accent spinning absolute">Vue </span>
-          <span class="text-4xl accent spinning absolute">Node </span>
-          <span class="text-4xl accent spinning absolute">Ruby on Rails</span>
-          <span class="text-4xl accent spinning absolute">Full Stack Development</span>
+          <div class='landing-animation relative'>
+
+          <span class="text-4xl accent spinning absolute ">React / Vue </span>
+          <span class="text-4xl accent spinning absolute ">Node / Ruby on Rails </span>
+          <span class="text-4xl accent spinning absolute ">WhiteBox and Blackbox Testing</span>
+          <span class="text-4xl accent spinning absolute ">Postman API Testing</span>
+          <span class="text-4xl accent spinning absolute ">Full Stack Development</span>
+          </div>
         </div>
       </section>
       {/* second page - Skills section */}
@@ -61,7 +64,7 @@ export default function Home() {
       </section>
       <section class="accent-background" id='about'>
         <h1 class="text-center title">About</h1>
-      <div class="flex flex-row about-section">
+      <div class="flex flex-row about-section items-center">
         <div class=" author-image ">
 
         <Image
@@ -94,15 +97,19 @@ export default function Home() {
      
           
       </section>
-      <footer class='' id='contact'>
+            {contacts.map((contact, index ) => (
+      <footer class='pb-12' id='contact'>
         <h1 class="text-center text-4xl py-4">Want to work together?</h1>
-        <div class='flex flex-row flex-wrap justify-evenly bottom-links text-2xl'>
-          <a href='https://www.linkedin.com/in/laura-antunez/' target='_blank'> Linkedin</a>
+        <div class='flex flex-row flex-wrap justify-evenly bottom-links text-2xl text-accent'>
+              <p>{contact.email}</p>
+              <a class='hover:text-natural-brown' href={contact.LinkedIN} target="_blank">LinkedIn </a>
+              <a class='hover:text-natural-brown' href={contact.Github} target="_blank">Github</a>
+              <a class='hover:text-natural-brown' href={contact.Resume} target="_blank">Resume</a>
           {/* <a href=''> Medium</a> */}
-          <a href='https://github.com/lauraantunez024' target='_blank'> Github</a>
           {/* <a href=''> Resume</a> */}
         </div>
       </footer>
+            ))}
     </main>
   );
 }

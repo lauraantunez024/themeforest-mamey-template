@@ -25,15 +25,17 @@ const callsToAction = [
 
 export default function HamburgerMenu() {
   return (
-    <Popover className="relative logo">
+    <div class='logo flex flex-row justify-end'>
+
+    <Popover className="">
       <Image
-          className="inline relative mt-5"
+          className="inline relative"
           src="/logo.png"
           width={100}
           height={100}
           alt="Tech Sapote Logo Image"
         />       
-      <Popover.Button className="inline-flex items-center gap-x-1 text-sm font-medium leading-6 secondary">
+      <Popover.Button type='button' className="inline-flex items-center gap-x-1 text-sm font-medium leading-6 secondary">
          <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
       </Popover.Button>
 
@@ -46,9 +48,9 @@ export default function HamburgerMenu() {
         leaveFrom="opacity-100 translate-y-0"
         leaveTo="opacity-0 translate-y-1"
       >
-        <Popover className="absolute mr-92 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
-          <div className="max-w-md flex-auto overflow-hidden rounded-3xl accent-background text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
-            <div className="p-4">
+        <Popover className="absolute popover z-10 mt-5 w-screen md:max-2xl:-translate-x-1/4 px-4 ">
+          <div className="max-w-md overflow-hidden rounded-3xl accent-background text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+            <div className="p-4 ">
               {solutions.map((item) => (
                 <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-natural-brown hover:text-accent">
                   <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg  group-hover:text-accent">
@@ -64,7 +66,7 @@ export default function HamburgerMenu() {
                 </div>
               ))}
             </div>
-            <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+            {/* <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
               {callsToAction.map((item) => (
                 <a
                   key={item.name}
@@ -75,10 +77,11 @@ export default function HamburgerMenu() {
                   {item.name}
                 </a>
               ))}
-            </div> 
+            </div> */}
           </div>
         </Popover>
       </Transition>
     </Popover>
+    </div>
   )
 }
