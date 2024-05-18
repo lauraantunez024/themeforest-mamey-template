@@ -72,7 +72,7 @@ a.column h2 {
 }
 
 .logo {
-  left: 90%;
+  left: 70%;
 }
 
 @media header {
@@ -144,7 +144,7 @@ main {
 }
 .aboutme-content {
   scroll-snap-align: start;
-  max-width: 90vw;
+  /* max-width: 90vw; */
   margin: 2% 2%;
   display: inline;
   flex-direction: column;
@@ -193,7 +193,7 @@ main {
 
 .title {
   font-size: 4em;
-  margin-top: 4rem;
+  margin-top: clamp(2, 1rem + 5vw, 4rem);
   font-size: clamp(4rem, 1rem + 5vw, 6rem);
 }
 
@@ -272,7 +272,7 @@ img {
   }
   .skill-card {
     flex-direction: column;
-    max-width: 90vw;
+    min-width: 90vw;
   }
 }
 

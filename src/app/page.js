@@ -35,7 +35,7 @@ export default function Home() {
       {/* second page - Skills section */}
       <section class="accent-background scrollable" id='skills'>
         <h1 class="text-center title">Skills</h1>
-        <div class="flex flex-col ">
+        <div class="flex flex-col items-center">
           {skills.map((skillData, index) => (
             <SkillBlock
               key={index}
@@ -62,9 +62,10 @@ export default function Home() {
           ))}
         </div>
       </section>
+      {/* 4th section - about me section */}
       <section class="accent-background" id='about'>
         <h1 class="text-center title">About</h1>
-      <div class="flex flex-row about-section items-center">
+      <div class="flex flex-row about-section items-evenly">
         <div class=" author-image ">
 
         <Image
@@ -78,13 +79,13 @@ export default function Home() {
 
         </div>
         <div class="w-full aboutme-content">
-          <h1 class="text-center text-3xl">
+          <h1 class="text-center primary text-3xl">
             {" "}
             {aboutMe.bigText}
             
           </h1>
           <br/>
-          <p class="text-xl text-center">
+          <p class="text-xl primary text-center">
             {" "}
             {aboutMe.smallText}
            {" "}
