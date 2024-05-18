@@ -15,7 +15,7 @@ import { skills, portfolio, aboutMe } from "./data.js";
 
 export default function Home() {
   return (
-    <main class="w-screen" id=''>
+    <main class="" id=''>
       <section class="primary-background h-screen">
         <div class="landing-content absolute">
           <h1 class="text-7xl mt-12">Laura Antunez</h1>
