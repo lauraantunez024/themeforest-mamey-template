@@ -16,7 +16,7 @@ const solutions = [
   { name: 'Skills', description: 'See what skills I have', href: '/#skills', icon: WrenchScrewdriverIcon },
   { name: 'Projects', description: 'Check out my completed and ongoing projects', href: '/#projects', icon: CursorArrowRaysIcon },
   { name: 'About', description: "Learn a little more about me", href: '/#about', icon: IdentificationIcon },
-  { name: 'Contact', description: 'Lets work together', href: '/#contact', icon: PhoneIcon },
+  { name: 'Contact', description: "Let's work together", href: '/#contact', icon: PhoneIcon },
 ]
 const callsToAction = [
   { name: 'Full About Me', href: '/About', icon: UserCircleIcon },

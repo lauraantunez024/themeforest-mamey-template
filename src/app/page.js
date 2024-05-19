@@ -21,21 +21,21 @@ export default function Home() {
           <h1 class="text-6xl mt-24">Laura Antunez</h1>
           <h1 class="text-3xl accent pt-4">Quality Assurance Engineer</h1>
           <br />
-          <h1 class='secondary'> with knowledge of:</h1>
+          <h1 class='secondary text-lg'> with knowledge of:</h1>
           <div class='landing-animation relative'>
 
-          <span class="text-4xl accent spinning absolute ">React / Vue </span>
-          <span class="text-4xl accent spinning absolute ">Node / Ruby on Rails </span>
-          <span class="text-4xl accent spinning absolute ">WhiteBox and Blackbox Testing</span>
-          <span class="text-4xl accent spinning absolute ">Postman API Testing</span>
-          <span class="text-4xl accent spinning absolute ">Full Stack Development</span>
+          <span class="text-3xl accent spinning absolute ">React / Vue </span>
+          <span class="text-3xl accent spinning absolute ">Node / Ruby on Rails </span>
+          <span class="text-3xl accent spinning absolute ">WhiteBox and Blackbox Testing</span>
+          <span class="text-3xl accent spinning absolute ">Postman API Testing</span>
+          <span class="text-3xl accent spinning absolute ">Full Stack Development</span>
           </div>
         </div>
       </section>
       {/* second page - Skills section */}
       <section class="accent-background scrollable pb-12" id='skills'>
         <h1 class="text-center title">Skills</h1>
-        <div class="flex flex-col items-center gap-4">
+        <div class="flex flex-col items-center text-center gap-4">
           {skills.map((skillData, index) => (
             <SkillBlock
               key={index}
@@ -47,8 +47,8 @@ export default function Home() {
       </section>
       {/* third page - projects section */}
       <section class='w-full pb-12' id='projects'>
-        <h1 class="text-6xl text-center title pt-6 mb-10">Projects</h1>
-        <div class="flex flex-wrap flex-row gap-4 justify-center items-center project-section">
+        <h1 class="text-6xl text-natural-brown text-center title pt-6 mb-10">Projects</h1>
+        <div class="flex flex-wrap flex-row gap-16 justify-center items-center project-section">
           {portfolio.map((project, index) => (
             <ProjectCard
               key={index}

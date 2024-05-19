@@ -57,10 +57,10 @@ body {
   width: 100vw !important;
   overflow-x: hidden;
 }
-
+/* 
 h1 {
-  font-size: clamp(1rem, 1rem + 1vh, 3rem)
-}
+  font-size: clamp(1rem, 2rem, 3rem)
+} */
 
 a.column h1 {
   font-size: clamp(1rem, 1vw + 5vw, 2rem);
@@ -107,7 +107,7 @@ main {
 }
 
 .landing-content {
-  padding: 4rem;
+  padding: 3rem;
 }
 /* Home page - skills section */
 .skill-shape {
@@ -214,6 +214,11 @@ img {
 
 .skills-title {
   display: none;
+  margin-bottom: -15%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+
 }
 
 
@@ -230,7 +235,6 @@ img {
 
   .landing-content {
     padding-top: 0;
-    padding-left: 5rem;
   }
 
 
@@ -255,7 +259,6 @@ img {
 
   .skills-title {
     display: inline;
-    position: absolute;
     left: 50%;
   }
   .popover {
