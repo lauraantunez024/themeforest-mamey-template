@@ -4,6 +4,7 @@
   --primary-color: #3e2723;
   --secondary-color: #dd6a41;
   --accent-color: #ffdab9;
+  --natural-brown: #7e5835
 }
 
 * {
@@ -111,7 +112,7 @@ main {
 }
 /* Home page - skills section */
 .skill-shape {
-  box-shadow: #7e5835 1rem 1rem;
+  box-shadow: var(--natural-brown) 1rem 1rem;
   border-radius: 1rem;
 }
 .skills {
@@ -119,7 +120,7 @@ main {
 }
 /* Home page -  about section*/
 .aboutme-shape {
-  box-shadow: #7e5835 15px 15px;
+  box-shadow: var(--natural-brown) 15px 15px;
   border-radius: 25px;
   /* padding: 1rem; */
 }
@@ -156,7 +157,7 @@ main {
 
 /* Home page -  project section*/
 .project-shape {
-  box-shadow: #7e5835 10px 10px;
+  box-shadow: var(--natural-brown) 10px 10px;
   border-radius: 1rem;
   max-width: 25vw;
   min-height: 25vh;
@@ -250,7 +251,7 @@ img {
   .skills-title {
     display: inline;
     left: 50%;
-    box-shadow: #7e5835 1vw 1vw;
+    box-shadow: var(--natural-brown) 3vw 3vw;
     border-radius: 25px;
   
 
