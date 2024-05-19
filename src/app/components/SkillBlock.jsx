@@ -30,7 +30,7 @@ export default function SkillBlock({ type, skillSet }) {
       {isMobile ? (
         <button
           type="button"
-          class="skills-title"
+          class="skills-title animation text-accent bg-primary p-5"
           onClick={showSkills}
         >
           {" "}
