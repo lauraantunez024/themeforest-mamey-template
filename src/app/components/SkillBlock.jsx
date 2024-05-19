@@ -1,18 +1,57 @@
+import {
+  ChevronDoubleDownIcon,
+  ChevronDownIcon,
+} from "@heroicons/react/20/solid";
+import React, { useState, useEffect } from 'react';
+
+
 export default function SkillBlock({ type, skillSet }) {
+    const [isVisible, setIsVisible] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth <=768);
+      };
+
+      window.addEventListener('resize', handleResize);
+      handleResize();
+
+      return () => {
+        window.removeEventListener('resize', handleResize)
+      }
+    }, []);
+
+
+    const showSkills = () => {
+      setIsVisible(!isVisible);
+    }
+  
+
   return (
-    
-      <div class='w-full items-center'>
-        <h1 class='text-3xl text-left pl-6 font-medium self-start' id='skill-type'> {type} </h1>
-        <div class='flex flex-row justify-center skill-card'>
-          {skillSet.map((skill, index) => (
-            <div class="secondary-background skill-shape my-5 mx-4 animation">
-              <div class="content accent text-center items-center text-xl py-2 px-4" key={index}>
-                {skill}
-              </div>
+    <div class="w-full items-center">
+      <h1
+        class="text-3xl text-left pl-6 font-medium self-start"
+        id="skill-type"
+      >
+        {" "}
+        {type}{" "}
+      </h1>
+      <button type='button' class='skills-title' onClick={showSkills}>
+        <ChevronDownIcon className="h-5 w-5  skills-button" style={{ transform: isVisible ? 'rotatex(180deg)' : '' }} aria-hidden="true"> {isVisible ? 'Hide' : 'Show'} </ChevronDownIcon>
+      </button>
+      <div class="flex flex-row justify-center skill-card" >
+        {skillSet.map((skill, index) => (
+          <div class="secondary-background skill-shape my-5 mx-4 animation" style={{ display: isMobile && !isVisible ? 'none' : 'inline-block'}}>
+            <div
+              class="content accent text-center items-center text-xl py-2 px-4"
+              key={index}
+            >
+              {skill}
             </div>
-          ))}
-      
-        </div>
+          </div>
+        ))}
       </div>
+    </div>
   );
 }

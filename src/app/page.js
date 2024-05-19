@@ -33,9 +33,9 @@ export default function Home() {
         </div>
       </section>
       {/* second page - Skills section */}
-      <section class="accent-background scrollable" id='skills'>
+      <section class="accent-background scrollable pb-12" id='skills'>
         <h1 class="text-center title">Skills</h1>
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center gap-4">
           {skills.map((skillData, index) => (
             <SkillBlock
               key={index}
@@ -46,9 +46,9 @@ export default function Home() {
         </div>
       </section>
       {/* third page - projects section */}
-      <section class='w-full' id='projects'>
-        <h1 class="text-6xl text-center title mb-10">Projects</h1>
-        <div class="flex flex-wrap flex-row justify-center items-center project-section">
+      <section class='w-full pb-12' id='projects'>
+        <h1 class="text-6xl text-center title pt-6 mb-10">Projects</h1>
+        <div class="flex flex-wrap flex-row gap-4 justify-center items-center project-section">
           {portfolio.map((project, index) => (
             <ProjectCard
               key={index}

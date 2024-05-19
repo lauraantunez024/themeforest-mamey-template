@@ -212,6 +212,11 @@ img {
 
 }
 
+.skills-title {
+  display: none;
+}
+
+
 @media screen and (max-width: 40rem) {
   body {
     overflow-y: none;
@@ -223,9 +228,11 @@ img {
     margin: 0;
   }
 
-  .spinning {
-    padding: 1rem;
+  .landing-content {
+    padding-top: 0;
+    padding-left: 5rem;
   }
+
 
   .logo {
     left: 55%;
@@ -241,11 +248,16 @@ img {
   .project-card {
     margin: 1% 1%;
     min-width: 50vw;
-    max-width: 90%;
+    max-width: 80%;
     min-height: 25vh;
     overflow-y: scroll;
   }
 
+  .skills-title {
+    display: inline;
+    position: absolute;
+    left: 50%;
+  }
   .popover {
     left : 25%;
     position: absolute;
@@ -255,6 +267,7 @@ img {
     font-size: clamp(1rem, 1vw + 5vw, 3rem);
   }
 
+ 
   .project-section {
     display: flex;
     flex-direction: column;
@@ -273,6 +286,10 @@ img {
   .skill-card {
     flex-direction: column;
     min-width: 90vw;
+  }
+
+  .skill-shape {
+    display: inline;
   }
 }
 
