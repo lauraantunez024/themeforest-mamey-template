@@ -173,10 +173,7 @@ main {
 /* Components - Hamburger Menu */
 /* Components - Project Cards */
 
-.project-card {
-  margin-left: 2rem;
-  /* overflow-y: auto; */
-}
+
 /* Components - Skills blocks */
  
 .items {
@@ -292,7 +289,8 @@ img {
 }
 
 section.accent-background {
-  width: 100vw;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 .bottom-links {
   /* padding: 1%; */
