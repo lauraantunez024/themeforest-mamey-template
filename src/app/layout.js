@@ -11,7 +11,7 @@ import Link from 'next/link';
 const workSans = Work_Sans({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Tech Sapote",
+  title: "Creative Portfolio",
   description: "Copyright Laura Antunez",
   visualViewport: "width=device-width, initial-scale=1.0",
   charset: "UTF-8",
