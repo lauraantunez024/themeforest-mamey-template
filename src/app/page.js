@@ -4,9 +4,7 @@ import ProjectCard from "./components/ProjectCard.jsx";
 import Image from "next/image";
 import Link from "next/link";
 
-const imageLoader = () => {
-  return `http://placekitten.com/200/200`;
-};
+
 import { skills, portfolio, aboutMe, contacts } from "./data.js";
 
 export default function Home() {
@@ -84,14 +82,13 @@ export default function Home() {
       {/* 4th section - about me section */}
       <section class="accent-background" id="about">
         <h1 class="text-center title">About</h1>
-        <div class="flex flex-row about-section items-evenly">
+        <div class="flex flex-row about-section items-center">
           <div class=" author-image ">
             <Image
-              loader={imageLoader}
               class="rounded-full inline"
               width={400}
               height={400}
-              src="/headshot.png"
+              src="/placeholder.jpeg"
               alt="dummy image"
             />
           </div>
