@@ -11,21 +11,14 @@ export default function HamburgerMenu() {
   return (
     <div class="logo flex flex-row justify-end">
       <Popover className="">
+        {/*  if you don't have a logo, you can use this instead, or substitute with your own icon. Just put it under public folder*/}
         <Image
           className="inline relative"
-          src="/logo.png"
+          src="/opensourcelogo.png"
           width={100}
           height={100}
           alt="your logo image"
         />
-        {/*  if you don't have a logo, you can use this instead, or substitute with your own icon. Just put it under public folder*/}
-        {/* <Image
-          className="inline relative"
-          src="/dummylogo.jpeg"
-          width={100}
-          height={100}
-          alt="your logo image"
-        /> */}
         <Popover.Button
           type="button"
           className="inline-flex items-center gap-x-1 text-sm font-medium leading-6 secondary"
